@@ -48,7 +48,7 @@ const MovieSearch = () => {
 
   useEffect(() => {
     fetchMovies(search, currentPage);
-  }, [currentPage]);
+  }, [currentPage, search]);
 
 
   const totalPages = Math.ceil(totalResults / 10); 
