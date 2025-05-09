@@ -101,7 +101,7 @@ const MovieSearch = () => {
 
   const deleteFav = async(movie) =>{
     try{
-      const response = await axios.delete(`http://localhost:3000/api/favourite/${movie.imdbID}`,{
+      const response = await axios.delete(`https://movieappbackend-sqqk.onrender.com/api/favourite/${movie.imdbID}`,{
         headers:{
           'Content-Type':'application/json'
         }
@@ -130,7 +130,7 @@ const MovieSearch = () => {
     const fetchMov = async () =>{
       try{
      
-        const response = await fetch('http://localhost:3000/api/favourite',{
+        const response = await fetch('https://movieappbackend-sqqk.onrender.com/api/favourite',{
           method:"GET",
           headers:{
             'Content-Type': 'application/json'
@@ -159,7 +159,7 @@ const MovieSearch = () => {
       }
       try{
       
-        const response= await fetch('http://localhost:3000/api/favourite',{
+        const response= await fetch('https://movieappbackend-sqqk.onrender.com/api/favourite',{
           method:"POST",
           headers:{
             'Content-Type': 'application/json'

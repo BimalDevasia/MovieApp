@@ -9,7 +9,7 @@ const FavMovie = () => {
   useEffect(() => {
     const fetchFavorites = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/favourite", {
+        const response = await fetch("https://movieappbackend-sqqk.onrender.com/api/favourite", {
           headers: {
             "Content-Type": "application/json",
           },
@@ -29,7 +29,7 @@ const FavMovie = () => {
   const handleDelete = async (movie) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/favourite/${movie.imdbID}`,
+        `https://movieappbackend-sqqk.onrender.com/api/favourite/${movie.imdbID}`,
         {
           method: "DELETE",
           headers: {
